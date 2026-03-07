@@ -33,7 +33,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://mohd_shan/meshes/base_link.STL"/>
+        <box size="0.3 0.2 0.1"/>
       </geometry>
     </collision>
   </link>
@@ -70,7 +70,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://mohd_shan/meshes/Link_BR.STL"/>
+        <cylinder radius="0.033" length="0.03"/>
       </geometry>
     </collision>
   </link>
@@ -120,7 +120,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://mohd_shan/meshes/Link_FR.STL"/>
+        <cylinder radius="0.033" length="0.03"/>
       </geometry>
     </collision>
   </link>
@@ -169,7 +169,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://mohd_shan/meshes/Link_FL.STL"/>
+        <cylinder radius="0.033" length="0.03"/>
       </geometry>
     </collision>
   </link>
@@ -218,7 +218,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://mohd_shan/meshes/Link_BL.STL"/>
+        <cylinder radius="0.033" length="0.03"/>
       </geometry>
     </collision>
   </link>
