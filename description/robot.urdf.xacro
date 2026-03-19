@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="hai_robot">
+<robot name="hai_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="robot_core.xacro" />
-  <xacro:include filename="gazebo_control.xacro" />
-  <xacro:include filename="ros2_control.xacro" />
+  <xacro:include filename="$(find mohd_shan)/description/robot_core.xacro"/>
+  <xacro:include filename="$(find mohd_shan)/description/lidar.xacro"/>
+  <xacro:include filename="$(find mohd_shan)/description/gazebo_control.xacro"/>
+
 </robot>

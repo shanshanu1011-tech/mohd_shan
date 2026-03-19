@@ -1,10 +1,9 @@
+<?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
   <gazebo>
 
-    <plugin name="gz::sim::systems::DiffDrive"
-            filename="gz-sim-diff-drive-system">
-
+    <plugin name="gz::sim::systems::DiffDrive" filename="gz-sim-diff-drive-system">
       <left_joint>joint_FL</left_joint>
       <left_joint>joint_BL</left_joint>
 
@@ -14,25 +13,17 @@
       <wheel_separation>0.19</wheel_separation>
       <wheel_radius>0.033</wheel_radius>
 
-      <topic>cmd_vel</topic>
+      <topic>/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+      <tf_topic>/model/my_bot/tf</tf_topic>
 
-      <odom_topic>odom</odom_topic>
       <frame_id>odom</frame_id>
       <child_frame_id>base_link</child_frame_id>
-
     </plugin>
-
 
     <plugin name="gz::sim::systems::JointStatePublisher"
             filename="gz-sim-joint-state-publisher-system">
-
-      <topic>joint_states</topic>
-
-      <joint_name>joint_FL</joint_name>
-      <joint_name>joint_BL</joint_name>
-      <joint_name>joint_FR</joint_name>
-      <joint_name>joint_BR</joint_name>
-
+      <topic>/joint_states</topic>
     </plugin>
 
   </gazebo>

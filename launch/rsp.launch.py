@@ -10,7 +10,7 @@ def generate_launch_description():
 
     urdf_file = os.path.join(pkg_share, 'description', 'robot.urdf.xacro')
 
-    robot_description = Command(['xacro ', urdf_file])
+    robot_description = Command(['xacro', urdf_file])
 
     return LaunchDescription([
 

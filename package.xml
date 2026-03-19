@@ -2,22 +2,32 @@
 <package format="3">
   <name>mohd_shan</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ROS2 Gazebo mobile robot simulation with LiDAR</description>
+
   <maintainer email="my_email@email.com">MY NAME</maintainer>
   <license>Apache-2.0</license>
 
-  <!-- Build tool dependency -->
+  <!-- Build tool -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <!-- Runtime dependencies -->
+  <!-- Core ROS dependencies -->
   <depend>rclcpp</depend>
   <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>tf2_ros</depend>
 
-  <!-- Test dependencies -->
+  <!-- Gazebo + ROS bridge -->
+  <depend>ros_gz_bridge</depend>
+  <depend>ros_gz_sim</depend>
+  <depend>ros_gz_image</depend>
+
+  <!-- Testing -->
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
   </export>
+
 </package>
